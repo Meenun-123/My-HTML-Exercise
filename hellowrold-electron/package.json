@@ -1,0 +1,12 @@
+{
+    "name": "hellowrold",
+    "version": "1.0.0",
+    "main": "main.js",
+    "devDependencies": {
+        "electron": "^36.3.2"
+    },
+    "scripts": {
+        "start": "electron ."
+    }
+    
+}
