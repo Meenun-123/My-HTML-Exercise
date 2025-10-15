@@ -27,16 +27,15 @@ function createWindow() {
 app.whenReady().then(createWindow);
 
 app.on("window-all-closed", () => {
-    // On macOS, apps typically stay active until the user quits explicitly
     if (process.platform !== "darwin") {
         app.quit();
     }
 });
 
 app.on("activate", () => {
-    // On macOS, recreate window when clicking the dock icon
     if (win === null) {
         createWindow();
     }
 });
+
 
